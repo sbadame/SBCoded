@@ -74,55 +74,55 @@ a:hover{ color:white;}
 #sublayer .tl {background: url(images/sublayer01.gif) 0 0 no-repeat;}
 #sublayer .tr {background: url(images/sublayer11.gif) 100% 0 no-repeat; padding:16px}
 
-
-#navigation {
-    display:inline;
-    padding:0px;
-    margin:0px;
-    list-style:none;
-    font-size: 1.2em;
-    font-weight: bold;
-    font-family: 'Lucida Console';
-    color: #0AAABC;
+.kwicks {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
-#navigation li{
-    float:left;
-    position:relative;
-    padding-left:60px;
+/* For the snazzy navigation menu http://www.jeremymartin.name/projects.php?project=kwicks */
+.kwicks li{
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    cursor: pointer;
+
+    float: left;
+    width: 125px;
+    height: 50px;
+    margin-right: 5px;
 }
 
-#navigation li a{text-decoration:none;}
-
-#navigation li ul{
-    display: none;
-    text-align:left;
-    position: absolute;
-    list-style:none;
-    top: 1em;
-    left: 55px;
-    clear:left;
-    border-bottom:1px solid white;
-    margin:0px;
-    padding:0px;
-    padding-top:0px;
-    font-weight:normal;
+#kwick1 {
+    background-color: red;
 }
 
-
-#navigation li ul li{
-    width: 150px;
-    background-color: #146EC9;
-    border: 1px solid white;
-    border-bottom:none;
-    margin:0px;
-    padding:5px;
-    padding-left:10px;
-    font-size:16px;
+#kwick1.active {
+    background-color: yellow;
 }
 
-#navigation li ul.Hover li{
-    display:list-item;
+#kwick2 {
+    background-color: blue;
+}
+
+#kwick2.active {
+    background-color: green;
+}
+#kwick3 {
+    background-color: purple;
+}
+
+#kwick3.active {
+    background-color: black;
+}
+#kwick4 {
+    background-color: white;
+    margin-right:none;
+}
+
+#kwick4.active {
+    background-color: gray;
 }
 
 #content{
