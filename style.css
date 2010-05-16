@@ -1,0 +1,271 @@
+/*  
+Theme Name: sbcoded
+Theme URI: http://www.wpdesigner.com
+Description: Wordpress theme for sbcoded
+Version: 1.0
+Author: Sandro Badame with help from Small Potatoe
+Author URI: http://www.wpdesigner.com/
+
+*/
+
+/* Copied from original sbcoded */
+body {
+    font-family: Arial;
+    font-size: 14px;
+    background: url(images/background.gif) 0 0 repeat-x;
+    background-color:white;
+
+}
+
+a:visited{color:white;}
+a:link{color:white; }
+a:active{color:white;}
+a:hover{ color:white;}
+
+
+#main{
+    margin:auto;
+}
+
+#heading img{
+    border:none;
+}
+
+#content a{
+    text-decoration: none;
+}
+
+#content a:hover{
+    border-bottom: 2px dotted blue;
+}
+
+#heading{border:none;}
+
+#update{
+    padding:  5px 0px;
+    width:100%;
+    text-align:right;
+}
+
+#update span{
+    color: #146EC9;
+    background-color:white;
+    border: 1px solid #146EC9;
+    padding: 3px 5px;
+}
+
+.update{
+    color:yellow;
+    font-style:italic;
+}
+
+#sublayer{
+    margin-top:10px;
+    margin-left:30px;
+    background-color: #146EC9;
+}
+
+#sublayer .t {background: url(images/sublayerY1.gif) 0 0 repeat-x; width:100%;}
+#sublayer .b {background: url(images/sublayerY0.gif) 0 100% repeat-x;}
+#sublayer .l {background: url(images/sublayerX0.gif) 0 0 repeat-y;}
+#sublayer .r {background: url(images/sublayerX1.gif) 100% 0 repeat-y;}
+#sublayer .bl {background: url(images/sublayer00.gif) 0 100% no-repeat; }
+#sublayer .br {background: url(images/sublayer10.gif) 100% 100% no-repeat;}
+#sublayer .tl {background: url(images/sublayer01.gif) 0 0 no-repeat;}
+#sublayer .tr {background: url(images/sublayer11.gif) 100% 0 no-repeat; padding:16px}
+
+
+#navigation {
+    display:inline;
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Lucida Console';
+    color: #0AAABC;
+}
+
+#navigation li{
+    float:left;
+    position:relative;
+    padding-left:60px;
+}
+
+#navigation li a{text-decoration:none;}
+
+#navigation li ul{
+    display: none;
+    text-align:left;
+    position: absolute;
+    list-style:none;
+    top: 1em;
+    left: 55px;
+    clear:left;
+    border-bottom:1px solid white;
+    margin:0px;
+    padding:0px;
+    padding-top:0px;
+    font-weight:normal;
+}
+
+
+#navigation li ul li{
+    width: 150px;
+    background-color: #146EC9;
+    border: 1px solid white;
+    border-bottom:none;
+    margin:0px;
+    padding:5px;
+    padding-left:10px;
+    font-size:16px;
+}
+
+#navigation li ul.Hover li{
+    display:list-item;
+}
+
+#content{
+    width: 740px;
+    float:left;
+    background-color: #4384D0;
+}
+
+#content .t {background: url(images/contentY1.gif) 0 0 repeat-x; width:100%;}
+#content .b {background: url(images/contentY0.gif) 0 100% repeat-x;}
+#content .l {background: url(images/contentX0.gif) 0 0 repeat-y;}
+#content .r {background: url(images/contentX1.gif) 100% 0 repeat-y;}
+#content .bl {background: url(images/content00.gif) 0 100% no-repeat; }
+#content .br {background: url(images/content10.gif) 100% 100% no-repeat;}
+#content .tl {background: url(images/content01.gif) 0 0 no-repeat;}
+#content .tr {background: url(images/content11.gif) 100% 0 no-repeat; padding:16px;}
+
+#sidebar{
+    background-color: #4384D0;
+    float:right;
+}
+
+#sidebar ul{
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+#sidebar li{
+    margin:0px;
+}
+
+#sidebar .t {background: url(images/contentY1.gif) 0 0 repeat-x; width:100%;}
+#sidebar .b {background: url(images/contentY0.gif) 0 100% repeat-x;}
+#sidebar .l {background: url(images/contentX0.gif) 0 0 repeat-y;}
+#sidebar .r {background: url(images/contentX1.gif) 100% 0 repeat-y;}
+#sidebar .bl {background: url(images/content00.gif) 0 100% no-repeat; }
+#sidebar .br {background: url(images/content10.gif) 100% 100% no-repeat;}
+#sidebar .tl {background: url(images/content01.gif) 0 0 no-repeat;}
+#sidebar .tr {background: url(images/content11.gif) 100% 0 no-repeat; padding:16px;}
+
+#meta{
+    padding: 0px 5px 10px 0px;
+    text-align:right;
+}
+
+#meta a{
+    text-decoration: none;
+}
+
+#footer{
+    clear:both;
+    width:100%;
+    color: #C9C9C9;
+    margin:15px 0px;
+    padding:10px 2px;
+    text-align:center;
+}
+
+.footNoteHover{
+    width:100%;
+    color: black;
+    text-align:center;
+    background-color:white;
+    margin:15px 0px;
+    padding:8px 0px;
+    border: 2px solid blue;
+}
+
+/*  Only used on the front page   */
+
+
+#main{
+	width:1000px;
+}
+
+.entry{
+	line-height: 1.5em;
+	color: #FFFFFF;
+	padding-bottom:20px;
+}
+			
+.title{
+	font-size:135%;
+	font-weight: bold;
+}
+
+.date{
+	text-indent: 15px;
+}
+
+.message{
+	padding-top: 15px;
+	padding-left: 15px;
+	text-indent: 25px;
+}
+
+.project_divisor{
+        text-align:center;
+        color:white;
+        font-size:200%;
+        font-style: italic;
+        border-bottom: 2px dashed white;
+        border-top: 2px dashed white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+}
+
+.comments-template{
+	margin: 10px 0 0;
+	border-top: 1px solid #ccc;
+	padding: 10px 0 0;
+}
+
+.comments-template ol{
+	margin: 0;
+	padding: 0 0 15px;
+	list-style: none;
+}
+
+.comments-template ol li{
+	margin: 10px 0 0;
+	line-height: 18px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.comments-template h2, .comments-template h3{
+	font-family: Georgia, Sans-serif;
+	font-size: 16px;
+}
+
+.commentmetadata{
+	font-size: 12px;
+}
+
+.comments-template p.nocomments{
+	padding: 0;
+}
+
+.comments-template textarea{
+	font-family: Arial, Helvetica, Georgia, Sans-serif;
+	font-size: 12px;
+}
