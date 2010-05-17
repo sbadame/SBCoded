@@ -1,7 +1,6 @@
             <div id="sidebar" style="float:right;">
                 <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">
                     <ul>
-                         <?php wp_list_pages('depth=3&title_li=Pages'); ?>
                         <li>
                             <?php _e('Categories'); ?>
                             <ul>

@@ -14,51 +14,28 @@ body {
     font-size: 14px;
     background: url(images/background.gif) 0 0 repeat-x;
     background-color:white;
+    margin:0;
+    padding-top:5px;
+}
 
+/* All around site defaults */
+a {
+    text-decoration: none;
 }
 
 a:visited{color:white;}
 a:link{color:white; }
 a:active{color:white;}
-a:hover{ color:white;}
-
+a:hover {
+    color:white;
+    border-bottom: 2px dotted blue;
+}
 
 #main{
     margin:auto;
 }
 
-#heading img{
-    border:none;
-}
-
-#content a{
-    text-decoration: none;
-}
-
-#content a:hover{
-    border-bottom: 2px dotted blue;
-}
-
-#heading{border:none;}
-
-#update{
-    padding:  5px 0px;
-    width:100%;
-    text-align:right;
-}
-
-#update span{
-    color: #146EC9;
-    background-color:white;
-    border: 1px solid #146EC9;
-    padding: 3px 5px;
-}
-
-.update{
-    color:yellow;
-    font-style:italic;
-}
-
+/* The sublayer is the darker blue bottom */
 #sublayer{
     margin-top:10px;
     margin-left:30px;
@@ -74,7 +51,23 @@ a:hover{ color:white;}
 #sublayer .tl {background: url(images/sublayer01.gif) 0 0 no-repeat;}
 #sublayer .tr {background: url(images/sublayer11.gif) 100% 0 no-repeat; padding:16px}
 
-.kwicks {
+/* Navigation menu here */
+#navlayer {
+    background-color: #4384D0;
+    margin-bottom: 7px;
+    padding: 0px;
+}
+
+#navlayer .t {background: url(images/contentY1.gif) 0 0 repeat-x; width:100%;}
+#navlayer .b {background: url(images/contentY0.gif) 0 100% repeat-x;}
+#navlayer .l {background: url(images/contentX0.gif) 0 0 repeat-y;}
+#navlayer .r {background: url(images/contentX1.gif) 100% 0 repeat-y;}
+#navlayer .bl {background: url(images/content00.gif) 0 100% no-repeat; }
+#navlayer .br {background: url(images/content10.gif) 100% 100% no-repeat;}
+#navlayer .tl {background: url(images/content01.gif) 0 0 no-repeat;}
+#navlayer .tr {background: url(images/content11.gif) 100% 0 no-repeat; padding:16px;}
+
+#navlayer ul {
     list-style: none;
     position: relative;
     margin: 0;
@@ -82,48 +75,29 @@ a:hover{ color:white;}
 }
 
 /* For the snazzy navigation menu http://www.jeremymartin.name/projects.php?project=kwicks */
-.kwicks li{
+#navlayer li{
     display: block;
     overflow: hidden;
     padding: 0;
     cursor: pointer;
 
     float: left;
-    width: 125px;
-    height: 50px;
+    width: 250px;
+    height: 25px;
     margin-right: 5px;
+    padding-top: 5px;
+    text-align: center;
+    background-color: #146EC9;
 }
 
-#kwick1 {
+/*# {
     background-color: red;
 }
 
 #kwick1.active {
     background-color: yellow;
 }
-
-#kwick2 {
-    background-color: blue;
-}
-
-#kwick2.active {
-    background-color: green;
-}
-#kwick3 {
-    background-color: purple;
-}
-
-#kwick3.active {
-    background-color: black;
-}
-#kwick4 {
-    background-color: white;
-    margin-right:none;
-}
-
-#kwick4.active {
-    background-color: gray;
-}
+*/
 
 #content{
     width: 740px;
