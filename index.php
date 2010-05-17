@@ -7,20 +7,22 @@
                     <?php while(have_posts()): the_post(); ?>
                         <div class="entry">
                             <div class="title"><?php the_title(); ?></div>
-                            <div class="date">
-                                <?php
-                                    $date_format = 'F jS, Y';
-                                    $posted = get_the_time($date_format);
-                                    $modified = get_the_modified_time('F jS, Y');
-                                    echo $posted;
-                                    if ($posted != $modified){
-                                        echo " Last edited: $modified";
-                                    }
-                                ?>
+                            <div class="info">
+                                <span>
+                                    <?php
+                                        $date_format = 'F jS, Y';
+                                        $posted = get_the_time($date_format);
+                                        $modified = get_the_modified_time('F jS, Y');
+                                        echo $posted;
+                                        if ($posted != $modified){
+                                            echo " Last edited: $modified";
+                                        }
+                                        edit_post_link('Edit', '&nbsp;|&nbsp;', ''); 
+                                    ?>
+                                </span>
                             </div>
                             <!-- <div class="metadata"> <?php _e('Filed under&#58;'); ?> <?php the_category(', ') ?> <?php _e('by'); ?> <?php the_author(); ?> </div> -->
                             <div class="message"><?php the_content(); ?></div>
-                            <div class="meta"><?php edit_post_link('Edit', ' ', ''); ?></div>
                             <div class="comments"> <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> </div>
                         </div>
                     <?php endwhile; ?>

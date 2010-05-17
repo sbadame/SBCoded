@@ -83,9 +83,7 @@ a:hover { color:white; border-bottom: 2px dotted blue;}
     padding-left: 3px;
     text-align: left;
 
-    background-color: #003DF5;
     font-weight: bold;
-    border: 2px solid black;
 }
 
 /*# {
@@ -186,8 +184,8 @@ a:hover { color:white; border-bottom: 2px dotted blue;}
 	font-weight: bold;
 }
 
-.date{
-	text-indent: 15px;
+.info{
+	margin-left: 15px;
 }
 
 .message{
