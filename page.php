@@ -6,7 +6,7 @@
                     <?php while(have_posts()): the_post(); ?>
                         <div class="entry">
                             <div class="title"><?php the_title(); ?></div>
-                            <div class="date"><?php the_date(); ?> </div>
+                            <div class="date"> Last edited: <?php the_date(); ?></div>
                             <!-- <div class="metadata"> <?php _e('Filed under&#58;'); ?> <?php the_category(', ') ?> <?php _e('by'); ?> <?php the_author(); ?> </div> -->
                             <div class="message"><?php the_content(); ?></div>
                             <div class="pages"><?php link_pages('<p><strong>Pages:</strong>',"</p>",'number'); ?></div>

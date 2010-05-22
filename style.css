@@ -187,6 +187,13 @@ a:hover { color:white; border-bottom: 2px dotted blue;}
 	font-weight: bold;
 }
 
+.date {
+    width: 100%;
+    font-style: italic;
+    text-indent: 20px;
+}
+
+
 .info{
 	margin-left: 15px;
 }
