@@ -115,17 +115,20 @@ a:hover { color:white; border-bottom: 2px dotted blue;}
 #content .tr {background: url(images/content11.gif) 100% 0 no-repeat; padding:16px;}
 
 #sidebar{
+    color: white;
     background-color: #4384D0;
     float:right;
 }
 
 #sidebar ul{
+    color: white;
     list-style-type: none;
     padding: 10px;
     margin: 0;
 }
 
 #sidebar li{
+    color: white;
     margin:0px;
 }
 
