@@ -29,7 +29,7 @@ a:hover { color:white; border-bottom: 2px dotted blue;}
 #main{margin:auto;}
 
 /* The sublayer is the darker blue bottom */
-#sublayer{
+#sublayer {
     margin-top:10px;
     margin-left:30px;
     background-color: #146EC9;
@@ -85,15 +85,6 @@ a:hover { color:white; border-bottom: 2px dotted blue;}
 
     font-weight: bold;
 }
-
-/*# {
-    background-color: red;
-}
-
-#kwick1.active {
-    background-color: yellow;
-}
-*/
 
 #lastnavitem{
     margin-right: none;
@@ -170,21 +161,19 @@ a:hover { color:white; border-bottom: 2px dotted blue;}
 }
 
 /*  Only used on the front page   */
-
-
 #main{
-	width:1000px;
+    width:1000px;
 }
 
 .entry{
-	line-height: 1.5em;
-	color: #FFFFFF;
-	padding-bottom:20px;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    padding-bottom:20px;
 }
-			
+
 .title{
-	font-size:135%;
-	font-weight: bold;
+    font-size:135%;
+    font-weight: bold;
 }
 
 .date {
@@ -193,63 +182,67 @@ a:hover { color:white; border-bottom: 2px dotted blue;}
     text-indent: 20px;
 }
 
+.comments {
+    text-indent: 15px;
+}
+
 
 .info{
-	margin-left: 15px;
+    margin-left: 15px;
 }
 
 .message{
-	padding-top: 15px;
-	padding-left: 15px;
-	text-indent: 25px;
+    padding-top: 15px;
+    padding-left: 15px;
+    text-indent: 25px;
 }
 
 .project_divisor{
-        text-align:center;
-        color:white;
-        font-size:200%;
-        font-style: italic;
-        border-bottom: 2px dashed white;
-        border-top: 2px dashed white;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        margin-bottom: 20px;
-        margin-top: 20px;
+    text-align:center;
+    color:white;
+    font-size:200%;
+    font-style: italic;
+    border-bottom: 2px dashed white;
+    border-top: 2px dashed white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .comments-template{
-	margin: 10px 0 0;
-	border-top: 1px solid #ccc;
-	padding: 10px 0 0;
+    margin: 10px 0 0;
+    border-top: 1px solid #ccc;
+    padding: 10px 0 0;
 }
 
 .comments-template ol{
-	margin: 0;
-	padding: 0 0 15px;
-	list-style: none;
+    margin: 0;
+    padding: 0 0 15px;
+    list-style: none;
 }
 
 .comments-template ol li{
-	margin: 10px 0 0;
-	line-height: 18px;
-	padding: 0 0 10px;
-	border-bottom: 1px solid #ccc;
+    margin: 10px 0 0;
+    line-height: 18px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 .comments-template h2, .comments-template h3{
-	font-family: Georgia, Sans-serif;
-	font-size: 16px;
+    font-family: Georgia, Sans-serif;
+    font-size: 16px;
 }
 
 .commentmetadata{
-	font-size: 12px;
+    font-size: 12px;
 }
 
 .comments-template p.nocomments{
-	padding: 0;
+    padding: 0;
 }
 
 .comments-template textarea{
-	font-family: Arial, Helvetica, Georgia, Sans-serif;
-	font-size: 12px;
+    font-family: Arial, Helvetica, Georgia, Sans-serif;
+    font-size: 12px;
 }
