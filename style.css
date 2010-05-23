@@ -24,7 +24,7 @@ a { text-decoration: none; }
 a:visited {color:white;}
 a:link {color:white;}
 a:active {color:white;}
-a:hover { color:white; border-bottom: 2px dotted blue;}
+a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
 
 #main{margin:auto;}
 
@@ -84,6 +84,7 @@ a:hover { color:white; border-bottom: 2px dotted blue;}
     text-align: left;
 
     font-weight: bold;
+
 }
 
 #lastnavitem{
@@ -131,6 +132,7 @@ a:hover { color:white; border-bottom: 2px dotted blue;}
 #sidebar .br {background: url(images/content10.gif) 100% 100% no-repeat;}
 #sidebar .tl {background: url(images/content01.gif) 0 0 no-repeat;}
 #sidebar .tr {background: url(images/content11.gif) 100% 0 no-repeat; padding:16px;}
+
 
 #meta{
     padding: 0px 5px 10px 0px;
@@ -246,3 +248,6 @@ a:hover { color:white; border-bottom: 2px dotted blue;}
     font-family: Arial, Helvetica, Georgia, Sans-serif;
     font-size: 12px;
 }
+
+
+
