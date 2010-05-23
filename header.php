@@ -27,7 +27,7 @@
             $('.surround').wrap('<div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr"></div></div></div></div></div></div></div></div>');
         });
      </script>
-     <?php wp_get_archives('type=monthly&format=link'); ?>
+     <?php //wp_get_archives('type=monthly&format=link'); ?>
      <?php //comments_popup_script(); // off by default ?>
      <?php wp_head(); ?>
 </head>

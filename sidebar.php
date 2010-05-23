@@ -1,5 +1,6 @@
             <div id="sidebar">
                     <span class="surround">
+                        <?php include(TEMPLATEPATH . '/searchform.php'); ?>
                         <?php print(_('Categories')."\n"); ?>
                         <ul>
                             <?php wp_list_cats('sort_column=name&optioncount=1&heirarchical=0'); ?>
