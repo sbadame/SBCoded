@@ -23,6 +23,9 @@
                 max: 205,
                 spacing: 15
             });
+
+            $('#sidebar span').wrap('<div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr"></div></div></div></div></div></div></div></div>');
+            $('#sidebar span').wrap('<div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr"></div></div></div></div></div></div></div></div>');
         });
      </script>
      <?php wp_get_archives('type=monthly&format=link'); ?>
