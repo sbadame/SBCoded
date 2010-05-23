@@ -1,5 +1,5 @@
             <div id="sidebar">
-                    <span>
+                    <span class="surround">
                         <?php print(_('Categories')."\n"); ?>
                         <ul>
                             <?php wp_list_cats('sort_column=name&optioncount=1&heirarchical=0'); ?>
