@@ -20,8 +20,7 @@ body {
 
 /* All around site defaults */
 a { text-decoration: none; }
-
-a:visited {color:white;}
+a:visited {color:#94BDEC;}
 a:link {color:white;}
 a:active {color:white;}
 a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
@@ -86,6 +85,9 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
     font-weight: bold;
 
 }
+
+#navlayer ul li a { color: #E5E610; }
+#navlayer ul li a:hover { color: #FF7F00; }
 
 #lastnavitem{
     margin-right: none;
