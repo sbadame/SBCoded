@@ -1,4 +1,4 @@
-/*  
+/*
 Theme Name: sbcoded
 Theme URI: http://www.wpdesigner.com
 Description: Wordpress theme for sbcoded
@@ -91,6 +91,9 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
 
 #lastnavitem{
     margin-right: none;
+}
+
+#searchform{
 }
 
 #content{

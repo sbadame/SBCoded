@@ -22,6 +22,7 @@
                                 }
                             ?>
                         </ul>
+                        <?php include(TEMPLATEPATH . '/searchform.php'); ?>
                     </span>
                 </div>
 
