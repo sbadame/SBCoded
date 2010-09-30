@@ -68,22 +68,14 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
 
 /* For the snazzy navigation menu http://www.jeremymartin.name/projects.php?project=kwicks */
 #navlayer ul li{
-    display: block;
-    overflow: hidden;
-    padding: 0;
-    cursor: pointer;
-
-    float: left;
-    width: 130px;
+    width: 150px;
     height: 25px;
     margin-right: 14px;
     padding-top: 5px;
     margin-left: 10px;
     padding-left: 3px;
     text-align: left;
-
     font-weight: bold;
-
 }
 
 #navlayer ul li a { color: #E5E610; }

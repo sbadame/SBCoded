@@ -5,24 +5,23 @@
         <div id="sublayer">
             <span class="surround">
                 <div id="navlayer">
-                    <span class="surround">
+<div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">
                         <!-- Grabbing the list of pages now -->
                         <ul>
                             <?php
                                 $output = wp_list_pages('echo=0&title_li_=');
                                 preg_match_all('!<a\s*href="(.*?)"\s*title="(.*?)">(.*?)</a>!', $output, $out, PREG_SET_ORDER);
-                                $i = 0;
-                                foreach ($out as $page){
+                                for ( $i = 0; $i < count($out); $i++){
+                                    $page = $out[$i];
                                     if ( $i == count($out) - 1){
-                                        print("\t\t\t\t<li><a id='lastnavitem' href='$page[1]'>$page[3]</a></li>\n");
+                                        print("<li><a id='lastnavitem' href='$page[1]'>$page[3]</a></li>\n");
                                     }else{
-                                        print("\t\t\t\t<li><a href='$page[1]'>$page[3]</a></li>\n");
+                                        print("<li><a href='$page[1]'>$page[3]</a></li>\n");
                                     }
-                                    $i++;
                                 }
                             ?>
                         </ul>
-                    </span>
+                    </div></div></div></div></div></div></div></div>
                 </div>
 
                 <!-- Content -->

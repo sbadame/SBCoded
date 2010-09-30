@@ -19,13 +19,9 @@
      <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/jquery.kwicks-1.5.1.pack.js"></script>
      <script>
         $().ready(function() {
-            $('#navlayer ul').kwicks({
-                max: 205,
-                spacing: 15
-            });
-
             $('.surround').wrap('<div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr"></div></div></div></div></div></div></div></div>');
         });
+
      </script>
      <?php //wp_get_archives('type=monthly&format=link'); ?>
      <?php //comments_popup_script(); // off by default ?>
