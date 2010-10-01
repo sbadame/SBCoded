@@ -63,13 +63,15 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
     list-style: none;
     position: relative;
     margin: 0;
+    margin-top: 10px;
     padding: 0;
+    text-align: center;
 }
 
-/* For the snazzy navigation menu http://www.jeremymartin.name/projects.php?project=kwicks */
 #navlayer ul li{
+    display:inline;
     width: 150px;
-    height: 25px;
+    height: 20px;
     margin-right: 14px;
     padding-top: 5px;
     margin-left: 10px;
@@ -168,6 +170,13 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
     line-height: 1.5em;
     color: #FFFFFF;
     padding-bottom:20px;
+}
+
+#title{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    color: white;
 }
 
 .title{
