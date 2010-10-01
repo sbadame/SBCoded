@@ -1,30 +1,9 @@
 <?php get_header(); ?>
 <body>
     <div id="main">
-        <a href="<?php bloginfo('url'); ?>"><img id="header" width="375" height="55" alt="Sandro's Code" src="<?php bloginfo('template_directory'); ?>/images/header.gif" /></a>
         <div id="sublayer">
             <span class="surround">
-                <div id="navlayer">
-                    <span class="surround">
-                        <!-- Grabbing the page right now -->
-                        <ul>
-                            <?php
-                                $output = wp_list_pages('echo=0&title_li_=');
-                                preg_match_all('!<a\s*href="(.*?)"\s*title="(.*?)">(.*?)</a>!', $output, $out, PREG_SET_ORDER);
-                                $i = 0;
-                                foreach ($out as $page){
-                                    if ( $i == count($out) - 1){
-                                        print("\t\t\t\t<li><a id='lastnavitem' href='$page[1]'>$page[3]</a></li>\n");
-                                    }else{
-                                        print("\t\t\t\t<li><a href='$page[1]'>$page[3]</a></li>\n");
-                                    }
-                                    $i++;
-                                }
-                            ?>
-                        </ul>
-                        <?php include(TEMPLATEPATH . '/searchform.php'); ?>
-                    </span>
-                </div>
+                <?php include("heading.php"); ?>
 
             <!-- Content -->
             <div id="content">
