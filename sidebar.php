@@ -22,6 +22,7 @@
                                     wp_loginout(); 
                                     wp_meta(); 
                             ?>
+                            <br>
                         </div>
                     </span>
             </div>
