@@ -19,14 +19,12 @@
      <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/jquery.js"></script>
      <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/jquery.kwicks-1.5.1.pack.js"></script>
      <script>
+        //Used to make the code look a little cleaner... should be done with php, not JS
         $().ready(function() {
             $('.surround').wrap('<div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr"></div></div></div></div></div></div></div></div>');
         });
-
      </script>
-     <?php //wp_get_archives('type=monthly&format=link'); ?>
-     <?php //comments_popup_script(); // off by default ?>
-     <?php wp_head(); ?>
+     <!-- <?php #wp_head(); ?> -->
 </head>
 <body>
     <div id="main">
@@ -36,10 +34,16 @@
                     <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">
                         <span class="header">
                             <h1 id="title"><a href="index.php">[ SB Coded ]</a></h1>
-                            <!-- Grabbing the list of pages now -->
+                            <!-- Create a list of pages that belong on the top bar -->
+                            <!-- ie) pages that have no parents -->
                             <ul>
                                 <?php
-                                    $output = wp_list_pages('echo=0&title_li_=');
+                                    $args = array(
+                                                'echo' => 0, #Don't print this out
+                                                'title_li' => "", #No formatting please
+                                                'depth' => 1 #Only top level pages please.
+                                            );
+                                    $output = wp_list_pages($args);
                                     preg_match_all('!<a\s*href="(.*?)"\s*title="(.*?)">(.*?)</a>!', $output, $out, PREG_SET_ORDER);
                                     for ( $i = 0; $i < count($out); $i++){
                                         $page = $out[$i];
