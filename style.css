@@ -1,3 +1,4 @@
+/* This could really use a clean up */
 /*
 Theme Name: sbcoded
 Theme URI: http://www.wpdesigner.com
@@ -18,7 +19,12 @@ body {
     padding-top:5px;
 }
 
-/* All around site defaults */
+#title a { text-decoration: none; }
+#title a:visited {color:white;}
+#title a:link {color:white;}
+#title a:active {color:white;}
+#title a:hover { color:#FF7F00; font-weight:bold; }
+
 .entry a { text-decoration: none; }
 .entry a:visited {color:#94BDEC;}
 .entry a:link {color:white;}
@@ -31,7 +37,6 @@ body {
 .header a:active {color:white;}
 .header a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
 
-/* All around site defaults */
 .message p a { text-decoration: none; }
 .message p a:visited {color:#94BDEC;}
 .message p a:link {color:white;}
@@ -205,7 +210,6 @@ body {
 }
 
 #title a {
-    color: white; /* Get rid of all of the link coloring */
 
     /* From google */
     font-family: 'Cantarell', serif;
