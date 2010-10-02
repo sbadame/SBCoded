@@ -1,1 +1,0 @@
-            <div id="footer">Copyright &#169; 2010 <?php bloginfo('name'); ?> <br />This website, and all sub-projects that this website holds are all original creations by Sandro Badame unless stated otherwise.</div>

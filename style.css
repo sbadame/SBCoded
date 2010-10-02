@@ -176,10 +176,11 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
     padding: 0px;
     margin: 0px;
     text-align: center;
-    color: white;
 }
 
 #title a {
+    color: white; /* Get rid of all of the link coloring */
+
     /* From google */
     font-family: 'Cantarell', serif;
     font-size: 42px;
