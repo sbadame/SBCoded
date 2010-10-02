@@ -1,13 +1,4 @@
-<?php get_header(); ?>
-<body>
-    <div id="main">
-        <div id="sublayer">
-            <span class="surround">
-                <?php include("heading.php"); ?>
-
-            <!-- Content -->
-            <div id="content">
-                <span class="surround">
+<?php include('top.php'); ?>
                     <?php if(have_posts()): ?> 
                         <?php while(have_posts()): the_post(); ?>
                             <div class="entry">
@@ -24,12 +15,4 @@
                         <div class="error">
                         </div>
                     <?php endif; ?>
-                </span><!-- close content decoration -->
-            </div> <!-- close content -->
-            <?php get_sidebar(); ?>
-            <?php get_footer(); ?>
-            </span> <!-- close sublayer decoration -->
-        </div> <!-- close sublayer -->
-    </div> <!-- close main -->
-</body>
-</html>
+<?php include('bottom.php'); ?>
