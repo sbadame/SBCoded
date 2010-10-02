@@ -1,13 +1,16 @@
             <div id="sidebar">
                     <span class="surround">
                         <?php include(TEMPLATEPATH . '/searchform.php'); ?>
-                        <!-- <?php print(_('Categories')."\n"); ?> 
-                        <ul>
-                            <?php wp_list_cats('sort_column=name&optioncount=1&heirarchical=0'); ?>
-                        </ul>-->
                         <div style="margin-top:10px">
                             <?php
-                                    wp_list_bookmarks( 'category_before=&category_after=&title_before=&title_after='  );
+                                    $args = array(
+                                        'class' => 'sidebarlinks',
+                                        'title_before' => '<span class="category">',
+                                        'title_after' => '</span>',
+                                        'category_before' => '',
+                                        'category_after' => ''
+                                    );
+                                    wp_list_bookmarks($args);
                             ?>
                             <?php print(_('Archives')."\n"); ?>
                             <ul>

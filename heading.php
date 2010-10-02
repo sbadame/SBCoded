@@ -1,6 +1,6 @@
                 <div id="navlayer">
                     <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">
-                        <h1 id="title" style="text-style:align">{ 'SB Coded' }</h1>
+                        <h1 id="title"><a href="index.php">[ SB Coded ]</a></h1>
                         <!-- Grabbing the list of pages now -->
                         <ul>
                             <?php

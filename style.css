@@ -179,6 +179,25 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
     color: white;
 }
 
+#title a {
+    /* From google */
+    font-family: 'Cantarell', serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    text-shadow: none;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0em;
+    word-spacing: 0em;
+    line-height: 1em;
+    border: 0px;
+}
+
+.category {
+    font-weight: bold;
+}
+
 .title{
     font-size:135%;
     font-weight: bold;
