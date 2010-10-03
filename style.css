@@ -115,7 +115,7 @@ body {
 }
 
 #content{
-    width: 700px;
+    width: 755px;
     float:left;
     background-color: #4384D0;
 }
@@ -246,19 +246,6 @@ body {
     padding-top: 15px;
     padding-left: 15px;
     text-indent: 25px;
-}
-
-.project_divisor{
-    text-align:center;
-    color:white;
-    font-size:200%;
-    font-style: italic;
-    border-bottom: 2px dashed white;
-    border-top: 2px dashed white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
 
 .comments-template{

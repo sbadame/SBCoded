@@ -1,7 +1,9 @@
             <div id="sidebar">
-                    <span class="surround">
-                        <?php include(TEMPLATEPATH . '/searchform.php'); ?>
-                        <div style="margin-top:10px">
+                    <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">
+                            <?php print("<span class=\"category\">"._('Archives')."</span>\n"); ?>
+                            <ul>
+                                <?php wp_get_archives('type=monthly&echo=1'); ?>
+                            </ul>
                             <?php
                                     $args = array(
                                         'class' => 'sidebarlinks',
@@ -12,10 +14,6 @@
                                     );
                                     wp_list_bookmarks($args);
                             ?>
-                            <?php print("<span class=\"category\">"._('Archives')."</span>\n"); ?>
-                            <ul>
-                                <?php wp_get_archives('type=monthly&echo=1'); ?>
-                            </ul>
                             <?php
                                     print("<span class='category'>");
                                     wp_register('',''); 
@@ -24,7 +22,5 @@
                                     wp_meta(); 
                                     print("</span>");
                             ?>
-                            <br>
-                        </div>
-                    </span>
+                    </div></div></div></div></div></div></div></div>
             </div>

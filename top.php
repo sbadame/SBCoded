@@ -8,28 +8,21 @@
      <link  href="//fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic&subset=latin" rel="stylesheet" type="text/css" >
      <?php
         //Figure out which stylesheet to load
-        if ( is_page() ){
             print('<link rel="stylesheet" href="' . get_bloginfo("template_directory") . '/pagestyle.css" type="text/css" media="screen" />'."\n");
-        }
      ?>
      <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
      <link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
      <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
      <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/jquery.js"></script>
-     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/jquery.kwicks-1.5.1.pack.js"></script>
-     <script>
-        //Used to make the code look a little cleaner... should be done with php, not JS
-        $().ready(function() {
-            $('.surround').wrap('<div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr"></div></div></div></div></div></div></div></div>');
-        });
-     </script>
-     <!-- <?php #wp_head(); ?> -->
+     
+     <!-- Stuff for the SyntaxHighligher http://code.google.com/p/syntaxhighlighter/wiki/Usage --->
+     <?php wp_head(); ?>
+     
 </head>
 <body>
     <div id="main">
         <div id="sublayer">
-            <span class="surround">
+	    <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">
                 <div id="navlayer">
                     <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">
                         <span class="header">
