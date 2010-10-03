@@ -19,6 +19,9 @@ body {
     padding-top:5px;
 }
 
+#footer a { color: #C9C9C9;}
+#footer a:hover { color:#FF7F00; font-weight:bold; }
+
 #title a { text-decoration: none; }
 #title a:visited {color:white;}
 #title a:link {color:white;}
@@ -180,16 +183,6 @@ body {
     margin:15px 0px;
     padding:10px 2px;
     text-align:center;
-}
-
-.footNoteHover{
-    width:100%;
-    color: black;
-    text-align:center;
-    background-color:white;
-    margin:15px 0px;
-    padding:8px 0px;
-    border: 2px solid blue;
 }
 
 /*  Only used on the front page   */
