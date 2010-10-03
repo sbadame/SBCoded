@@ -55,6 +55,26 @@
                                     }
                                 ?>
                             </ul>
+                            <!-- Get the list of pages that are children of this one. -->
+                            <?php
+                                #Are we on the top page? If so, then we already have a menu
+                                if ( is_page() && $post->ID > 0) {
+                                    #At this point we know that this is not the home page
+                                    if ($post->post_parent == 0){
+                                        #So now we know that this pages's parent is the home page..
+                                        $children = wp_list_pages( 'depth=1&echo=0&child_of='.$post->ID.'&title_li=' );
+                                    }else{
+                                        #This pages parent is a sub category
+                                        $children = wp_list_pages( 'depth=1&echo=0&child_of='.$post->post_parent.'&title_li=' );
+                                    }
+                                    #If we have a submenu, print it.
+                                    if ($children){
+                                        echo '<ul id="submenu" >';
+                                        echo $children;
+                                        echo '</ul>';
+                                    }
+                                }
+                            ?>
                         </span>
                     </div></div></div></div></div></div></div></div>
                 </div>
