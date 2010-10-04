@@ -26,10 +26,11 @@
                 <div id="navlayer">
                     <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">
                         <span class="header">
-                            <h1 id="title"><a href="index.php">[ SB Coded ]</a></h1>
-                            <!-- Create a list of pages that belong on the top bar -->
-                            <!-- ie) pages that have no parents -->
+                            <h1 id="title"><a href="http://www.sbcoded.com/index.php">[ SB Coded ]</a></h1>
                             <ul>
+				<li><a href="http://www.sbcoded.com/index.php"> Home </a></li>
+				<!-- Create a list of pages that belong on the top bar -->
+				<!-- ie) pages that have no parents -->
                                 <?php
                                     $args = array(
                                                 'echo' => 0, #Don't print this out

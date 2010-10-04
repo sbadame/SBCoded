@@ -17,7 +17,7 @@
                             <?php
                                     print("<span class='category'>");
                                     wp_register('',''); 
-                                    print("<br>");
+                                    print("<br />");
                                     wp_loginout(); 
                                     wp_meta(); 
                                     print("</span>");
