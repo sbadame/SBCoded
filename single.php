@@ -6,7 +6,12 @@
                             <div class="date"><?php the_date(); ?> </div>
                             <div class="message"><?php the_content(); ?></div>
                             <div class="meta"><?php edit_post_link('Edit', ' ', ''); ?></div>
-                            <div class="comments"> <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> </div>
+                            <div class="comments">
+                                <a href="<?php the_permalink();?>#comments">
+                                    <?php comments_number('No Comments Yet &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
+                                </a>
+                            </div>
+                            <!-- <div class="comments"> <?php #comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> </div> -->
                         </div>
                         <div class="comments-template">
                             <?php comments_template(); ?>
