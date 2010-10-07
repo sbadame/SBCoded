@@ -35,6 +35,7 @@
                                     foreach( get_pages(array('parent'=>0)) as $page){
                                         $link = get_page_link($page->ID);
                                         $title = get_the_title($page->ID);
+                                        if ($post->ID == $page->ID){ $title = "[$title]"; }
                                         if ( $i == count($out) - 1){
                                             print("<li><a id='lastnavitem' href='$link' title='$title'>$title</a></li>\n");
                                         }else{
@@ -47,6 +48,7 @@
                             <?php
                                 #Are we on the top page? If so, then we already have a menu
                                 if ( is_page() && $post->ID > 0) {
+                                    
                                     #At this point we know that this is not the home page
                                     if ($post->post_parent == 0){
                                         #So now we know that this pages's parent is the home page..
