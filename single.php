@@ -14,7 +14,7 @@
                             <!-- <div class="comments"> <?php #comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> </div> -->
                         </div>
                         <div class="comments-template">
-                            <?php comments_template(); ?>
+                            <?php comments_template(); #Must be in 'The Loop' ?>
                         </div>
                     <?php endwhile; ?>
                     <div class="navlinks"> <?php posts_nav_link(); ?> </div>

@@ -1,9 +1,9 @@
-<!-- Make sure that this page is not accessed directly -->
-<? php if(!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME'])) : ?>
+<?php #Make sure that this page is not accessed directly ?>
+<?php if(!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME'])) : ?>
     <?php die('You can not acces this page directly!'); ?>
 <?php endif; ?>
 
-<!-- Check if a password is needed to view the post -->
+<?php #Check if a password is needed to view the post ?>
 <?php if(!empty($post->post_password)) : ?>
     <?php if($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) : ?>
         <p> You did not pass the cookie hash! </p>
@@ -16,12 +16,12 @@
     <ol class="commentlist">
     <?php foreach ($comments as $commment) : ?>
         <li class="commentsitem">
-            <?php if ($comment->comments_approved == '0' : ?>
+            <?php if ($comment->comments_approved == '0') : ?>
                 <p class="commentswaitingapproval"> Comment is awaiting approval </p>
             <?php endif; ?>
-            <?php comment_text(); ?>
+            <p> <?php echo $comment->ID; comment_text(); ?></p>
             <cite>
-                <?php comment_type(); ?> by <?php comment_author_link(); ?> on <?php php_comment_date('F jS, Y') ?> at <?php comment_time(); ?>
+                <?php comment_type(); ?> by <?php comment_author_link(); ?> on <?php comment_date('F jS, Y') ?> at <?php comment_time(); ?>
             </cite>
         </li>
     <?php endforeach; ?>
@@ -32,7 +32,7 @@
 
 <!--  And now the magical form that actually creates comments -->
 <?php if(comments_open()) : ?>
-    <?php if(get_option('comment_registration') && !user_ID :?>
+    <?php if(get_option('comment_registration') && !user_ID) :?>
         <p> Sorry, but you need to register! </p>
     <?php else : ?>
         <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">

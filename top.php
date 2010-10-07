@@ -32,19 +32,13 @@
 				<!-- Create a list of pages that belong on the top bar -->
 				<!-- ie) pages that have no parents -->
                                 <?php
-                                    $args = array(
-                                                'echo' => 0, #Don't print this out
-                                                'title_li' => "", #No formatting please
-                                                'depth' => 1 #Only top level pages please.
-                                            );
-                                    $output = wp_list_pages($args);
-                                    preg_match_all('!<a\s*href="(.*?)"\s*title="(.*?)">(.*?)</a>!', $output, $out, PREG_SET_ORDER);
-                                    for ( $i = 0; $i < count($out); $i++){
-                                        $page = $out[$i];
+                                    foreach( get_pages(array('parent'=>0)) as $page){
+                                        $link = get_page_link($page->ID);
+                                        $title = get_the_title($page->ID);
                                         if ( $i == count($out) - 1){
-                                            print("<li><a id='lastnavitem' href='$page[1]'>$page[3]</a></li>\n");
+                                            print("<li><a id='lastnavitem' href='$link' title='$title'>$title</a></li>\n");
                                         }else{
-                                            print("<li><a href='$page[1]'>$page[3]</a></li>\n");
+                                            print("<li><a href='$link'>$title</a></li>\n");
                                         }
                                     }
                                 ?>
@@ -63,9 +57,7 @@
                                     }
                                     #If we have a submenu, print it.
                                     if ($children){
-                                        echo '<ul id="submenu" >';
-                                        echo $children;
-                                        echo '</ul>';
+                                        print("<ul id='submenu'> $children </ul>\n");
                                     }
                                 }
                             ?>
