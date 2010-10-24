@@ -20,7 +20,7 @@ $(document).ready(function(){
     });
 
     //If the user was linked directly to the comments, show them!
-    if (window.location.hash.match("^#comments")){
+    if (window.location.hash.match("^#comment")){
         $("#comments").click();
     }
 
