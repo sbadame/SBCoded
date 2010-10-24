@@ -283,3 +283,52 @@ body {
     font-family: Arial, Helvetica, Georgia, Sans-serif;
     font-size: 12px;
 }
+
+.comments-template fieldset{
+    border: none;
+}
+
+.comments-template fieldset p{
+    clear: both;
+    margin-left:15px;
+}
+
+.comments-template fieldset p label{
+    width: 4em;
+    float: left;
+}
+
+.comments-template fieldset p label.error{
+    float: none;
+    font-weight:bold;
+    color: #FFB643;
+    vertical-align: top;
+    padding-left: .5em;
+}
+
+#comments {
+    text-align: center;
+}
+
+#commentlist-show {
+    display: none;
+    text-align: center;
+}
+
+#commentlist-hide{
+    display: none;
+    text-align: center;
+}
+
+#commentwriter-show {
+    display: none;
+    text-align: center;
+}
+
+#commentwriter-hide {
+    display: none;
+    text-align: center;
+}
+
+#commentwriter {
+}

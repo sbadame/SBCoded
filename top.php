@@ -6,15 +6,17 @@
      <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats please -->
      <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
      <link  href="//fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic&subset=latin" rel="stylesheet" type="text/css" >
+     <script src="http://code.jquery.com/jquery-latest.js"></script>
+     <script type="text/javascript" src="http://dev.jquery.com/view/trunk/plugins/validate/jquery.validate.js"></script>
      <?php
         //Figure out which stylesheet to load
             print('<link rel="stylesheet" href="' . get_bloginfo("template_directory") . '/pagestyle.css" type="text/css" media="screen" />'."\n");
+            print('<script src="' . get_bloginfo("template_directory") . '/sbcoded.js"></script>');
      ?>
      <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
      <link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
      <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
      <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-     
      <!-- Stuff for the SyntaxHighligher http://code.google.com/p/syntaxhighlighter/wiki/Usage --->
      <?php wp_head(); ?>
      
