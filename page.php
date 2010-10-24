@@ -8,7 +8,7 @@
             <div class="message"><?php the_content(); ?></div>
             <div class="pages"><?php link_pages('<p><strong>Pages:</strong>',"</p>",'number'); ?></div>
             <div class="meta"><?php edit_post_link('Edit', ' ', ''); ?></div>
-            <div class="comments"> <?php comments_template(); ?> </div>
+            <div class="comments-template"> <?php comments_template(); ?> </div>
         </div>
     <?php endwhile; ?>
 <?php else : ?>
