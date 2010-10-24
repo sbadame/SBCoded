@@ -1,4 +1,11 @@
 $(document).ready(function(){
+    //Handle mouseover functionality
+    $("#comments").add("#commentwriter-hide").add("#commentwriter-show").hover(
+        function(){ $(this).addClass("hoverlink"); },
+        function(){ $(this).removeClass("hoverlink"); }
+    );
+
+
     //Make sure that we only have valid entires for the comment fields.
     $("#commentForm").validate();
 

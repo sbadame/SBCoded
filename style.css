@@ -332,3 +332,10 @@ body {
 
 #commentwriter {
 }
+
+
+.hoverlink{
+    color:#FF7F00;
+    font-weight:bold;
+    cursor: pointer;
+}
