@@ -27,11 +27,11 @@
         
     <?php foreach ($comments as $comment) : ?>
         <li class="commentsitem">
+            <cite>From <?php comment_author_link(); ?> on <?php comment_date('F jS, Y') ?> at <?php comment_time(); ?></cite>
             <?php if ($comment->comments_approved == '0') : ?>
                 <p class="commentswaitingapproval" > Comment is awaiting approval </p>
             <?php endif; ?>
-            <p><?php comment_text(); ?></p>
-            <cite><?php comment_type(); ?> by <?php comment_author_link(); ?> on <?php comment_date('F jS, Y') ?> at <?php comment_time(); ?></cite>
+            <p class="comment-content"><?php comment_text(); ?></p>
         </li>
     <?php endforeach; /* End comment loop */ ?>
     </ol>
@@ -59,7 +59,6 @@
                         <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">Log out &raquo;</a>
                     </p>
                 <?php else : ?>
-                    <legend>Add a Comment</legend>
                     <p>
                         <label for="author">Name <?php if($req) echo "*"; ?></label>
                         <input type="text" name="author" <?php if($req) echo "class='required'"; ?> minlength="2" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" />

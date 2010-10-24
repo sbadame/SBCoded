@@ -1,4 +1,3 @@
-/* This could really use a clean up */
 /*
 Theme Name: sbcoded
 Theme URI: http://www.wpdesigner.com
@@ -6,10 +5,8 @@ Description: Wordpress theme for sbcoded
 Version: 1.0
 Author: Sandro Badame with help from Small Potatoe
 Author URI: http://www.wpdesigner.com/
-
 */
 
-/* Copied from original sbcoded */
 body {
     font-family: Arial;
     font-size: 14px;
@@ -19,8 +16,11 @@ body {
     padding-top:5px;
 }
 
-#footer a { color: #C9C9C9;}
-#footer a:hover { color:#FF7F00; font-weight:bold; }
+#main{
+    margin:auto;
+    width:1000px;
+}
+
 
 #title a { text-decoration: none; }
 #title a:visited {color:white;}
@@ -34,6 +34,11 @@ body {
 .entry a:active {color:white;}
 .entry a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
 
+a { color:#FFB643; text-decoration: none; border-bottom: 2px dotted #FFB643; }
+a:visited { color:#94BDEC; border-bottom: 2px dotted #94BDEC; }
+a:active {color:white;}
+a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
+
 .header a { text-decoration: none; }
 .header a:visited {color:#94BDEC;}
 .header a:link {color:white;}
@@ -45,9 +50,6 @@ body {
 .message p a:link {color:white;}
 .message p a:active {color:white;}
 .message p a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
-
-
-#main{margin:auto;}
 
 /* The sublayer is the darker blue bottom */
 #sublayer {
@@ -107,8 +109,6 @@ body {
 #sidebar a:link {color:white;}
 #sidebar a:active {color:white;}
 #sidebar a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
-
-
 
 #lastnavitem{
     margin-right: none;
@@ -184,11 +184,6 @@ body {
     text-align:center;
 }
 
-/*  Only used on the front page   */
-#main{
-    width:1000px;
-}
-
 .entry {
     line-height: 1.5em;
     color: #FFFFFF;
@@ -202,8 +197,7 @@ body {
 }
 
 #title a {
-
-    /* From google */
+    /* From google font picker*/
     font-family: 'Cantarell', serif;
     font-size: 42px;
     font-style: normal;
@@ -247,25 +241,6 @@ body {
     text-indent: 25px;
 }
 
-.comments-template{
-    margin: 10px 0 0;
-    border-top: 1px solid #ccc;
-    padding: 10px 0 0;
-}
-
-.comments-template ol{
-    margin: 0;
-    padding: 0 0 15px;
-    list-style: none;
-}
-
-.comments-template ol li{
-    margin: 10px 0 0;
-    line-height: 18px;
-    padding: 0 0 10px;
-    border-bottom: 1px solid #ccc;
-}
-
 .comments-template h2, .comments-template h3{
     font-family: Georgia, Sans-serif;
     font-size: 16px;
@@ -293,7 +268,8 @@ body {
     margin-left:15px;
 }
 
-.comments-template fieldset p label{
+#commentForm fieldset p label{
+    /* This is used to align the labels */
     width: 4em;
     float: left;
 }
@@ -308,6 +284,20 @@ body {
 
 #comments {
     text-align: center;
+}
+
+#commentlist {
+    margin: 0;
+    padding: 0 0 15px;
+    list-style: none;
+}
+
+
+#commentlist li p {
+    border-left: 2px solid #94BDEC;
+    margin-left: 15px;
+    padding-left: 5px;
+    list-style: none;
 }
 
 #commentlist-show {
@@ -330,7 +320,7 @@ body {
     text-align: center;
 }
 
-#commentwriter {
+#commentwriter{
 }
 
 
