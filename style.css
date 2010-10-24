@@ -218,6 +218,11 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
 .title{
     font-size:135%;
     font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.title a {
+	border-bottom: 2px dotted white;
 }
 
 .date {
@@ -236,7 +241,7 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
 }
 
 .message p{
-    padding-top: 15px;
+    padding-bottom: 10px;
     padding-left: 15px;
     text-indent: 25px;
 }
