@@ -1,18 +1,18 @@
 <?php include('top.php'); ?>
-                    <?php if(have_posts()): ?> 
-                        <?php while(have_posts()): the_post(); ?>
-                            <div class="entry">
-                                <div class="title"><?php the_title(); ?></div>
-                                <div class="date"> Last edited: <?php the_date(); ?></div>
-                                <!-- <div class="metadata"> <?php _e('Filed under&#58;'); ?> <?php the_category(', ') ?> <?php _e('by'); ?> <?php the_author(); ?> </div> -->
-                                <div class="message"><?php the_content(); ?></div>
-                                <div class="pages"><?php link_pages('<p><strong>Pages:</strong>',"</p>",'number'); ?></div>
-                                <div class="meta"><?php edit_post_link('Edit', ' ', ''); ?></div>
-                                <div class="comments"> <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> </div>
-                            </div>
-                        <?php endwhile; ?>
-                    <?php else : ?>
-                        <div class="error">
-                        </div>
-                    <?php endif; ?>
+<!-- starting page.php -->
+<?php if(have_posts()): ?> 
+    <?php while(have_posts()): the_post(); ?>
+        <div class="entry">
+            <div class="title"><?php the_title(); ?></div>
+            <div class="date"> Last edited: <?php the_date(); ?></div>
+            <div class="message"><?php the_content(); ?></div>
+            <div class="pages"><?php link_pages('<p><strong>Pages:</strong>',"</p>",'number'); ?></div>
+            <div class="meta"><?php edit_post_link('Edit', ' ', ''); ?></div>
+            <div class="comments"> <?php comments_template(); ?> </div>
+        </div>
+    <?php endwhile; ?>
+<?php else : ?>
+    <div class="error"> </div>
+<?php endif; ?>
+<!-- ending page.php -->
 <?php include('bottom.php'); ?>

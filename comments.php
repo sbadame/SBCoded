@@ -1,3 +1,9 @@
+<?php
+ # This file is called by all documents to display the comments for a given post.
+ # Since there is no difference between pages on how to display comments I see no 
+ # reason to divide this into mutliple pages.
+?>
+
 <?php #Make sure that this page is not accessed directly ?>
 <?php if(!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME'])) : ?>
     <?php die('You can not acces this page directly!'); ?>
@@ -10,24 +16,28 @@
     <?php endif; ?>
 <?php endif; ?>
 
+
 <!-- Onto actually displaying some comments... -->
 <?php if ($comments) : ?>
     <h3 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
+
     <ol class="commentlist">
-    <?php foreach ($comments as $commment) : ?>
+    <?php foreach ($comments as $comment) : ?>
         <li class="commentsitem">
             <?php if ($comment->comments_approved == '0') : ?>
-                <p class="commentswaitingapproval"> Comment is awaiting approval </p>
+                <p class="commentswaitingapproval" > Comment is awaiting approval </p>
             <?php endif; ?>
-            <p> <?php echo $comment->ID; comment_text(); ?></p>
-            <cite>
-                <?php comment_type(); ?> by <?php comment_author_link(); ?> on <?php comment_date('F jS, Y') ?> at <?php comment_time(); ?>
-            </cite>
+            <p><?php comment_text(); ?></p>
+            <cite><?php comment_type(); ?> by <?php comment_author_link(); ?> on <?php comment_date('F jS, Y') ?> at <?php comment_time(); ?></cite>
         </li>
-    <?php endforeach; ?>
+    <?php endforeach; /* End comment loop */ ?>
     </ol>
-<?php else : ?>
-    <p class="commentsnone"> No Comments Yet. </p>
+<?php else : // this is displayed if there are no comments so far ?>
+    <?php if ('open' == $post->comment_status) : ?>
+        <p class="commentsnone"> No Comments Yet. </p>
+    <?php else : // comments are closed ?>
+        <p class="nocomments">Comments are closed.</p>
+    <?php endif; ?>
 <?php endif; ?>
 
 <!--  And now the magical form that actually creates comments -->
@@ -38,8 +48,7 @@
         <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
             <?php if($user_ID) : ?>
                 <p>
-                    Logged in as 
-                    <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. 
+                    Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. 
                     <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">Log out &raquo;</a>
                 </p>
             <?php else : ?>
@@ -57,7 +66,7 @@
                 </p>
             <?php endif; ?>
             <p>
-                <textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"> Comment goes here </textarea>
+                <textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"> </textarea>
             </p>
             <p>
                 <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
@@ -69,5 +78,4 @@
 <?php else : ?>
     <p> Sorry no comments allowed here! </p>
 <?php endif; ?>
-
-
+<!-- Done with comments -->
