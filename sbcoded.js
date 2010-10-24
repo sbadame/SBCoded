@@ -19,6 +19,11 @@ $(document).ready(function(){
         $("#commentlist").toggle("slow");
     });
 
+    //If the user was linked directly to the comments, show them!
+    if (window.location.hash.match("^#comments")){
+        $("#comments").click();
+    }
+
     //------ Comment Submission Form --------
     $("#commentwriter").hide();
     $("#commentwriter-show").show();
