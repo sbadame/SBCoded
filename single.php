@@ -7,9 +7,7 @@
             <div class="date"><?php the_date(); ?> </div>
             <div class="message"><?php the_content(); ?></div>
             <div class="meta"><?php edit_post_link('Edit', ' ', ''); ?></div>
-        </div>
-        <div class="comments-template">
-            <?php comments_template(); #Must be call from within 'The Loop' ?>
+            <div class="comments-template"> <?php comments_template(); #Must be call from within 'The Loop' ?> </div>
         </div>
     <?php endwhile; ?>
     <div class="navlinks"> <?php posts_nav_link(); ?> </div>
