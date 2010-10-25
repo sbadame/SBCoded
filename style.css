@@ -40,7 +40,7 @@ a:active {color:white;}
 a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
 
 .header a { text-decoration: none; }
-.header a:visited {color:#94BDEC;}
+.header a:visited {color:white;}
 .header a:link {color:white;}
 .header a:active {color:white;}
 .header a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
