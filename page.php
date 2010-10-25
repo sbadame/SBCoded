@@ -3,7 +3,7 @@
 <?php if(have_posts()): ?> 
     <?php while(have_posts()): the_post(); ?>
         <div class="entry">
-            <div class="title"><?php the_title(); ?></div>
+            <div class="title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></div>
             <div class="date"> Last edited: <?php the_date(); ?></div>
             <div class="message"><?php the_content(); ?></div>
             <div class="pages"><?php link_pages('<p><strong>Pages:</strong>',"</p>",'number'); ?></div>
