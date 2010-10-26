@@ -27,7 +27,7 @@
         
     <?php foreach ($comments as $comment) : ?>
         <li class="commentsitem">
-            <cite>From <?php comment_author_link(); ?> on <?php comment_date('F jS, Y') ?> at <?php comment_time(); ?></cite>
+            <cite> <?php comment_author_link(); ?> on <?php comment_date('F jS, Y') ?> at <?php comment_time(); ?></cite>
             <?php if ($comment->comments_approved == '0') : ?>
                 <p class="commentswaitingapproval" > Comment is awaiting approval </p>
             <?php endif; ?>
@@ -59,17 +59,19 @@
                         <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">Log out &raquo;</a>
                     </p>
                 <?php else : ?>
+                    <legend>Add a Comment</legend>
+                    <?php $name_email_req = get_option('require_name_email'); ?>
                     <p>
-                        <label for="author">Name <?php if($req) echo "*"; ?></label>
-                        <input type="text" name="author" <?php if($req) echo "class='required'"; ?> minlength="2" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" />
+                        <label for="author">Name <?php if($name_email_req) echo "*"; ?></label>
+                        <input type="text" name="author" class="<?php if($name_email_req) echo 'required'; ?> minlength="2" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" />
                     </p>
                     <p>
-                        <label for="email">E-mail <?php if($req) echo "*"; ?></label>
-                        <input type="text" name="email" id="email" class="required email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" />
+                        <label for="email">E-mail <?php if($name_email_req) echo "*"; ?></label>
+                        <input type="text" name="email" id="email" class="<?php if($name_email_req) echo 'required'; ?> email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" />
                     </p>
                     <p>
                         <label for="url">Website</label>
-                        <input type="text" name="url" id="url" class="required" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
+                        <input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
                     </p>
                 <?php endif; ?>
                 <p>

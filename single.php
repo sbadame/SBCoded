@@ -4,9 +4,9 @@
     <?php while(have_posts()): the_post(); ?>
         <div class="entry">
             <div class="title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></div>
-            <div class="date"><?php the_date(); ?> </div>
+            <span class="date"><?php the_date(); ?> </span>
+            <span class="meta"><?php edit_post_link('Edit', '&nbsp;|&nbsp;', ''); ?></span>
             <div class="message"><?php the_content(); ?></div>
-            <div class="meta"><?php edit_post_link('Edit', ' ', ''); ?></div>
             <div class="comments-template"> <?php comments_template(); #Must be call from within 'The Loop' ?> </div>
         </div>
     <?php endwhile; ?>
