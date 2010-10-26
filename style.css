@@ -7,6 +7,12 @@ Author: Sandro Badame with help from Small Potatoe
 Author URI: http://www.wpdesigner.com/
 */
 
+/* An attempt for some constant behavior across the browser space */
+* {
+ padding: 0;
+ margin: 0;
+}
+
 body {
     font-family: Arial;
     font-size: 14px;
@@ -16,11 +22,10 @@ body {
     padding-top:5px;
 }
 
-#main{
+#main {
     margin:auto;
     width:1000px;
 }
-
 
 #title a { text-decoration: none; }
 #title a:visited {color:white;}
@@ -45,11 +50,45 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
 .header a:active {color:white;}
 .header a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
 
+.message {
+    margin-top: 15px;
+}
+
+.message h3 {
+    margin-top: 10px;
+}
+
 .message p a { text-decoration: none; }
 .message p a:visited {color:#94BDEC;}
 .message p a:link {color:white;}
 .message p a:active {color:white;}
 .message p a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
+
+.message p{
+    padding-bottom: 10px;
+    padding-left: 15px;
+    text-indent: 15px;
+}
+
+.message dl {
+   width: 100%;
+   overflow: hidden;
+   margin-left: 15px;
+}
+
+.message dl dt{
+   font-style: italic;
+   float: left;
+   clear: left;
+   width: 33%;
+   padding-bottom: 10px;
+}
+
+
+.message dl dd{
+   float:left;
+   width: 66%;
+}
 
 /* The sublayer is the darker blue bottom */
 #sublayer {
@@ -240,11 +279,6 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
     margin-left: 15px;
 }
 
-.message p{
-    padding-bottom: 10px;
-    padding-left: 15px;
-    text-indent: 25px;
-}
 
 .comments-template h2, .comments-template h3{
     font-family: Georgia, Sans-serif;
