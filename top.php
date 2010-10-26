@@ -6,6 +6,7 @@
 
      <!-- Style Sheets -->
      <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+     <link rel="shortcut icon" href="favicon.ico" >
      <link  href="//fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic&subset=latin" rel="stylesheet" type="text/css" >
 
      <!-- java script (not required for website functionality) -->
