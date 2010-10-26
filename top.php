@@ -40,7 +40,7 @@
 
                             <?php if ( $post->post_parent > 0 ): #Make sure that our siblings aren't the top pages... ?>
                             <!-- The sibling level pages.-->
-                            <ul id="submenu"> Related: <?php foreach( get_pages(array('parent'=>$post->post_parent)) as $sibling ): ?>
+                            <ul id="submenu"> <?php foreach( get_pages(array('parent'=>$post->post_parent,'hierarchical'=>0)) as $sibling ): ?>
                                     <li><a href="<?php echo get_page_link($sibling->ID); ?>"><?php echo get_the_title($sibling->ID); ?></a></li>
                             <?php endforeach; ?></ul>
                             <?php endif; ?>
