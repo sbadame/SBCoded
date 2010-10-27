@@ -80,6 +80,10 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted #FF7F00; font-weight:bold; }
    width: 66%;
 }
 
+.message ul {
+   margin-left: 25px;
+}
+
 /* The sublayer is the darker blue bottom */
 #sublayer {
     margin-top:10px;

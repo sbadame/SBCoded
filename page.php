@@ -3,7 +3,7 @@
 <?php if(have_posts()): ?> 
     <?php while(have_posts()): the_post(); ?>
         <div class="entry">
-            <div class="title"><a href="<?php echo get_permalink(); ?>"><<?php the_title(); ?></a></div>
+            <div class="title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></div>
             <span class="date"> Last edited: <?php the_date(); ?></span>
             <span class="meta"><?php edit_post_link('Edit', '&nbsp;|&nbsp;', ''); ?></span>
             <div class="message"><?php the_content(); ?></div>
