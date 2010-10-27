@@ -45,7 +45,7 @@
 
 <!--  And now the magical form that actually creates comments -->
 <?php if(comments_open()) : ?>
-    <div id="commentwriter-show">Click to add a comment!</div>
+    <div id="commentwriter-show">Add a comment!</div>
     <div id="commentwriter-hide">Hide the comment form</div>
     <div id="commentwriter">
         <?php if(get_option('comment_registration') && !user_ID) :?>
