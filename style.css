@@ -8,10 +8,7 @@ Author URI: http://www.wpdesigner.com/
 */
 
 /* An attempt for some constant behavior across the browser space */
-* {
- padding: 0;
- margin: 0;
-}
+* { padding: 0; margin: 0; }
 
 body {
     font-family: Arial;
@@ -27,28 +24,27 @@ body {
     width:1000px;
 }
 
-#title a { text-decoration: none; }
-#title a:visited {color:white;}
-#title a:link {color:white;}
-#title a:active {color:white;}
-#title a:hover { color:#FF7F00; font-weight:bold; }
-
-.entry a { text-decoration: none; }
-.entry a:visited {color:#94BDEC;}
-.entry a:link {color:white;}
-.entry a:active {color:white;}
-.entry a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
-
-a { color:#FFB643; text-decoration: none; border-bottom: 2px dotted #FFB643; }
-a:visited { color:#94BDEC; border-bottom: 2px dotted #94BDEC; }
+/* The main style for links */
+a { color:white; text-decoration: none; border-bottom: 2px dotted white; }
 a:active {color:white;}
-a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
+a:visited { color:#94BDEC; border-bottom: 2px dotted #94BDEC; }
+a:hover { color:#FF7F00; border-bottom: 2px dotted #FF7F00; font-weight:bold; }
 
-.header a { text-decoration: none; }
 .header a:visited {color:white;}
 .header a:link {color:white;}
 .header a:active {color:white;}
-.header a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
+
+#sidebar a {color: #E5E610; text-decoration: none; }
+#sidebar a:visited {color:#94BDEC;}
+#sidebar a:link {color:white;}
+#sidebar a:active {color:white;}
+#sidebar a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
+
+.message p a { text-decoration: none; }
+.message p a:visited {color:#94BDEC;}
+.message p a:link {color:white;}
+.message p a:active {color:white;}
+.message p a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
 
 .message {
     margin-top: 15px;
@@ -57,12 +53,6 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
 .message h3 {
     margin-top: 10px;
 }
-
-.message p a { text-decoration: none; }
-.message p a:visited {color:#94BDEC;}
-.message p a:link {color:white;}
-.message p a:active {color:white;}
-.message p a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
 
 .message p{
     padding-bottom: 10px;
@@ -143,11 +133,6 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
     font-weight: bold;
 }
 
-#sidebar a {color: #E5E610; text-decoration: none; }
-#sidebar a:visited {color:#94BDEC;}
-#sidebar a:link {color:white;}
-#sidebar a:active {color:white;}
-#sidebar a:hover { color:#FF7F00; border-bottom: 2px dotted blue; font-weight:bold; }
 
 #lastnavitem{
     margin-right: none;
