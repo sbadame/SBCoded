@@ -30,6 +30,8 @@ a:active { color:white; border-bottom: 2px dotted white; }
 a:visited { color:#94BDEC; border-bottom: 2px dotted #94BDEC; }
 a:hover { color:#FF7F00; border-bottom: 2px dotted #FF7F00; font-weight:bold; }
 
+/* Why this is needed, I have no idea */
+#title a:hover {color: #FF7F00;}
 .header a:visited {color:white;}
 
 .message {
