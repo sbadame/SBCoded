@@ -24,16 +24,21 @@ $(document).ready(function(){
         $("#comments").click();
     }
 
-    //------ Comment Submission Form --------
-    $("#commentwriter").hide();
-    $("#commentwriter-show").show();
+    //------ --------
+    function sectionToggler(section){
+        $(section).hide();
+        $(section + "-show").show();
 
-    function commentwriterClick(){
-        $("#commentwriter-show").toggle();
-        $("#commentwriter-hide").toggle();
-        $("#commentwriter").toggle("slow", function(){$.scrollTo("#commentwriter");});
+        var toggler = function(){
+            $(section + "-show").toggle();
+            $(section + "-hide").toggle();
+            $(section).toggle("slow", function(){$.scrollTo(section);});
+        }
+
+        $(section + "-show").click(toggler);
+        $(section + "-hide").click(toggler);
     }
 
-    $("#commentwriter-show").click(commentwriterClick);
-    $("#commentwriter-hide").click(commentwriterClick);
+    sectionToggler("#commentwriter");
+
 });
