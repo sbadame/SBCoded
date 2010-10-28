@@ -31,7 +31,7 @@ $(document).ready(function(){
     function commentwriterClick(){
         $("#commentwriter-show").toggle();
         $("#commentwriter-hide").toggle();
-        $("#commentwriter").toggle("slow");
+        $("#commentwriter").toggle("slow", function(){$.scrollTo("#commentwriter");});
     }
 
     $("#commentwriter-show").click(commentwriterClick);
