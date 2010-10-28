@@ -311,29 +311,10 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted #FF7F00; font-weight:bold; }
     list-style: none;
 }
 
-#commentlist-show {
+#commentlist-hide, #commentlist-show, #commentwriter-show, #commentwriter-hide {
     display: none;
     text-align: center;
 }
-
-#commentlist-hide{
-    display: none;
-    text-align: center;
-}
-
-#commentwriter-show {
-    display: none;
-    text-align: center;
-}
-
-#commentwriter-hide {
-    display: none;
-    text-align: center;
-}
-
-#commentwriter{
-}
-
 
 .hoverlink{
     color:#FF7F00;
