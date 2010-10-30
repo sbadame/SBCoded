@@ -18,24 +18,21 @@
 
 
 <!-- Onto actually displaying some comments... -->
-<?php if ($comments) : ?>
-    <div id="commentlist-show">View the <?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</div>
-    <div id="commentlist-hide">Hide the <?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</div>
-    <ol id="commentlist">
-        <?php foreach ($comments as $comment) : ?> <li class="commentsitem">
-            <cite> <?php comment_author_link(); ?> on <?php comment_date('F jS, Y') ?> at <?php comment_time(); ?></cite>
-            <?php if ($comment->comments_approved == '0') : ?>
-                <p class="commentswaitingapproval" > Comment is awaiting approval </p>
-            <?php endif; ?>
-            <p class="comment-content"><?php comment_text(); ?></p>
-        </li> <?php endforeach; /* End comment loop */ ?>
-    </ol>
-<?php else : // this is displayed if there are no comments so far ?>
-    <?php if ('open' == $post->comment_status) : ?>
-        <p class="commentsnone"> No Comments Yet. </p>
-    <?php else : // comments are closed ?>
-        <p class="nocomments">Comments are closed.</p>
+<?php if ($post->comment_status == "open") : ?>
+    <div id="commentlist-show"><?php comments_number('No Comments as of yet', 'View the One Comment', 'View the % Comments' );?> to &#8220;<?php the_title(); ?>&#8221;</div>
+    <div id="commentlist-hide"><?php comments_number('No Comments as of yet', 'View the One Comment', 'View the % Comments' );?> to &#8220;<?php the_title(); ?>&#8221;</div>
+    <?php if ($commentlist) : ?><ol id="commentlist">
+            <?php foreach ($comments as $comment) : ?> <li class="commentsitem">
+                <cite> <?php comment_author_link(); ?> on <?php comment_date('F jS, Y') ?> at <?php comment_time(); ?></cite>
+                <?php if ($comment->comments_approved == '0') : ?>
+                    <p class="commentswaitingapproval" > Comment is awaiting approval </p>
+                <?php endif; ?>
+                <p class="comment-content"><?php comment_text(); ?></p>
+            </li> <?php endforeach; /* End comment loop */ ?>
+        </ol>
     <?php endif; ?>
+<?php else : // this is displayed if there are no comments so far ?>
+    <p class="nocomments">Comments are closed.</p>
 <?php endif; ?>
 
 <!--  And now the magical form that actually creates comments -->
