@@ -46,7 +46,7 @@
         <?php if(get_option('comment_registration') && !user_ID) :?>
             <p> Sorry, but you need to register! </p>
         <?php else : ?>
-            <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentForm">
+            <form id="commentForm" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" >
                 <fieldset>
                 <?php if($user_ID) : ?>
                     <p>
@@ -54,7 +54,6 @@
                         <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">Log out &raquo;</a>
                     </p>
                 <?php else : ?>
-                    <legend>Add a Comment</legend>
                     <?php $name_email_req = get_option('require_name_email'); ?>
                     <p>
                         <label for="author">Name <?php if($name_email_req) echo "*"; ?></label>

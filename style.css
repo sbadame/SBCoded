@@ -11,7 +11,7 @@ Author URI: http://www.wpdesigner.com/
 * { padding: 0; margin: 0; }
 
 body {
-    font-family: Arial;
+    font-family: Helvetica, Arial;
     font-size: 14px;
     background: url(images/background.gif) 0 0 repeat-x;
     background-color:white;
@@ -238,7 +238,7 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted #FF7F00; font-weight:bold; }
 }
 
 .title a {
-	border-bottom: 2px dotted white;
+    border-bottom: 2px dotted white;
 }
 
 .date {
@@ -257,34 +257,32 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted #FF7F00; font-weight:bold; }
 }
 
 
-.comments-template h2, .comments-template h3{
-    font-family: Georgia, Sans-serif;
-    font-size: 16px;
+#commentlist-hide, #commentlist-show, #commentwriter-show, #commentwriter-hide {
+    border-top: 1px solid #91B8E8;
+    font-weight: bold;
+
+    margin: 10px;
+    margin-top:20px;
+    padding: 10px;
+
+    display: none; /* These don't get displayed unless JS is being used on the page */
 }
 
-.commentmetadata{
-    font-size: 12px;
-}
-
-.comments-template p.nocomments{
-    padding: 0;
-}
-
-.comments-template textarea{
+#commentForm textarea{
     font-family: Arial, Helvetica, Georgia, Sans-serif;
     font-size: 12px;
 }
 
-.comments-template fieldset{
+#commentForm fieldset{
     border: none;
 }
 
-.comments-template fieldset p{
+#commentForm fieldset p{
     clear: both;
     margin-left:15px;
 }
 
-.comments-template fieldset p label.error{
+#commentForm fieldset p label.error{
     font-weight:bold;
     color: #FFB643;
     vertical-align: top;
@@ -292,29 +290,23 @@ a:hover { color:#FF7F00; border-bottom: 2px dotted #FF7F00; font-weight:bold; }
     float: none;
 }
 
-#comments {
-    text-align: center;
-}
-
 #commentlist {
-    margin: 0;
-    padding: 0 0 15px;
     list-style: none;
+    margin-left: 10px;
 }
 
+#commentlist li {
+    margin-top: 15px;
+}
 
 #commentlist li p {
-    border-left: 2px solid #94BDEC;
+    border-left: 3px solid #94BDEC;
     margin-bottom: 5px;
     margin-left: 15px;
     padding-left: 5px;
     list-style: none;
 }
 
-#commentlist-hide, #commentlist-show, #commentwriter-show, #commentwriter-hide {
-    display: none;
-    text-align: center;
-}
 
 .hoverlink{
     color:#FF7F00;
