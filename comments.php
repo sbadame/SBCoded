@@ -21,7 +21,7 @@
 <?php if ($post->comment_status == "open") : ?>
     <div id="commentlist-show"><?php comments_number('No Comments as of yet', 'View the One Comment', 'View the % Comments' );?> to &#8220;<?php the_title(); ?>&#8221;</div>
     <div id="commentlist-hide"><?php comments_number('No Comments as of yet', 'View the One Comment', 'View the % Comments' );?> to &#8220;<?php the_title(); ?>&#8221;</div>
-    <?php if ($commentlist) : ?><ol id="commentlist">
+    <?php if ($comments) : ?> <ol id="commentlist">
             <?php foreach ($comments as $comment) : ?> <li class="commentsitem">
                 <cite> <?php comment_author_link(); ?> on <?php comment_date('F jS, Y') ?> at <?php comment_time(); ?></cite>
                 <?php if ($comment->comments_approved == '0') : ?>
