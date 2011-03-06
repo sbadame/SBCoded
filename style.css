@@ -51,10 +51,15 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
     text-indent: 15px;
 }
 
+.message ul {
+    padding-left: 45px;
+    padding-bottom: 10px;
+}
+
 .message dl {
    width: 100%;
    overflow: hidden;
-   margin-left: 15px;
+   margin-left: 25px;
 }
 
 .message dl dt{
