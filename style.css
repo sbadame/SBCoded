@@ -36,9 +36,9 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
 .header a:hover { color:#FF7F00; border-bottom: 3px solid #FF7F00; font-weight:bold; }
 
 .message {
-    /*Stole this from the NYT site...*/
-    font-family: georgia, 'times new roman', times;
+    font-size: 16px;
     margin-top: 15px;
+    color: black;
 }
 
 .message h3 {
@@ -142,6 +142,7 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
     width: 790px;
     float:left;
     background-color: #4384D0;
+    /*background-color: #DCE8F5;*/
 }
 
 #content .t {background: url(images/contentY1.gif) 0 0 repeat-x; width:100%;}
