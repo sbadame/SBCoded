@@ -1,5 +1,5 @@
             <div id="sidebar">
-                    <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">
+                    <!-- <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr"> -->
                             <?php print("<span class=\"category\">"._('Archives')."</span>\n"); ?>
                             <ul>
                                 <?php wp_get_archives('type=monthly&echo=1'); ?>
@@ -22,5 +22,5 @@
                                     wp_meta(); 
                                     print("</span>");
                             ?>
-                    </div></div></div></div></div></div></div></div>
+                            <!-- </div></div></div></div></div></div></div></div> -->
             </div>

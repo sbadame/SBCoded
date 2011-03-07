@@ -30,7 +30,7 @@
         <div id="sublayer">
             <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">
                 <div id="navlayer">
-                    <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">
+                    <!-- <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr"> -->
                         <span class="header">
                             <h1 id="title"><a href="<?php bloginfo('url'); ?>">[ SB Coded ]</a></h1>
                             <!-- The top level pages.-->
@@ -54,7 +54,7 @@
                             <?php endif; ?>
 
                         </span>
-                    </div></div></div></div></div></div></div></div>
+                    <!-- </div></div></div></div></div></div></div></div> -->
                 </div>
                 <!-- Content -->
                 <div id="content">
