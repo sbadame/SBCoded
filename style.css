@@ -77,7 +77,7 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
 #content a:hover { color:#FF9B06; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
 
 .entry {
-    line-height: 2.5em;
+    line-height: 2em;
     padding-bottom:20px;
 }
 
@@ -91,8 +91,8 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
 
 .message p{
     padding-left: 15px;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .message ul {
