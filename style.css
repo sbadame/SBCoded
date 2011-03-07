@@ -46,7 +46,7 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
 #title a {
     /* From google font picker*/
     font-family: 'Cantarell', serif;
-    font-size: 42px;
+    font-size: 2.3em;
     font-style: normal;
     font-weight: 700;
     text-shadow: none;
@@ -58,15 +58,18 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
     border: 0px;
 }
 
-/*The Style for the content of the webpage*/
+/* Styling the content of the webpage */
 #content{
-    width: 790px;
+    width: 755px;
     float:left;
-    background-color: #4384D0;
     color: black;
     background-color: white;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
 }
-                                    /*FF7F00 ;94BDEC*/
+
 #content a { color: #074688; text-decoration: none; border-bottom: 1px dashed white; }
 #content a:active { color:#074688; border-bottom: 1px dashed white; }
 #content a:visited { color:#30649B; border-bottom: 1px dashed #94BDEC; }
@@ -175,11 +178,9 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
     font-weight: bold;
 }
 
-
 #lastnavitem{
     margin-right: none;
 }
-
 
 #content .t {background: url(images/contentY1.gif) 0 0 repeat-x; width:100%;}
 #content .b {background: url(images/contentY0.gif) 0 100% repeat-x;}
@@ -191,6 +192,7 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
 #content .tr {background: url(images/content11.gif) 100% 0 no-repeat; padding:16px;}
 
 #sidebar{
+    width: 150px;
     color: white;
     background-color: #4384D0;
     float:right;
@@ -250,7 +252,7 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
 }
 
 .title{
-    font-size:135%;
+    font-size:1.75em;
     font-weight: bold;
     margin-bottom: 7px;
 }
