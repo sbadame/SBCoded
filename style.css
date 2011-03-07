@@ -24,7 +24,7 @@ body {
     width:1000px;
 }
 
-/* The main style for links */
+/* The main style for links around the content */
 a { color:white; text-decoration: none; border-bottom: 1px dashed white; }
 a:active { color:white; border-bottom: 1px dashed white; }
 a:visited { color:#94BDEC; border-bottom: 1px dashed #94BDEC; }
@@ -34,6 +34,48 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
 #title  a:hover   {color: #FF7F00;}
 .header a:visited {color: white;}
 .header a:hover { color:#FF7F00; border-bottom: 3px solid #FF7F00; font-weight:bold; }
+
+
+/*The actual SBCoded title*/
+#title{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+#title a {
+    /* From google font picker*/
+    font-family: 'Cantarell', serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    text-shadow: none;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0em;
+    word-spacing: 0em;
+    line-height: 1em;
+    border: 0px;
+}
+
+/*The Style for the content of the webpage*/
+#content{
+    width: 790px;
+    float:left;
+    background-color: #4384D0;
+    color: black;
+    background-color: white;
+}
+                                    /*FF7F00 ;94BDEC*/
+#content a { color: #074688; text-decoration: none; border-bottom: 1px dashed white; }
+#content a:active { color:#074688; border-bottom: 1px dashed white; }
+#content a:visited { color:#30649B; border-bottom: 1px dashed #94BDEC; }
+#content a:hover { color:#FF9B06; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
+
+.entry {
+    line-height: 1.5em;
+    padding-bottom:20px;
+}
 
 .message {
     font-size: 16px;
@@ -138,12 +180,6 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
     margin-right: none;
 }
 
-#content{
-    width: 790px;
-    float:left;
-    background-color: #4384D0;
-    /*background-color: #DCE8F5;*/
-}
 
 #content .t {background: url(images/contentY1.gif) 0 0 repeat-x; width:100%;}
 #content .b {background: url(images/contentY0.gif) 0 100% repeat-x;}
@@ -207,33 +243,6 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
     margin:15px 0px;
     padding:10px 2px;
     text-align:center;
-}
-
-.entry {
-    line-height: 1.5em;
-    color: #FFFFFF;
-    padding-bottom:20px;
-}
-
-#title{
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-}
-
-#title a {
-    /* From google font picker*/
-    font-family: 'Cantarell', serif;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 700;
-    text-shadow: none;
-    text-decoration: none;
-    text-transform: none;
-    letter-spacing: 0em;
-    word-spacing: 0em;
-    line-height: 1em;
-    border: 0px;
 }
 
 .category {
