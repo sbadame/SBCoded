@@ -69,6 +69,7 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
     border-radius: 7px;
     -moz-border-radius: 7px;
     border: 2px solid white;
+    padding-top: 10px;
 }
 
 #content a { color: #074688; text-decoration: none; border-bottom: 1px dashed white; }
