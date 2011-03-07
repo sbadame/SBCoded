@@ -12,6 +12,7 @@
                 <script type="text/javascript">
                     var disqus_shortname = 'sbcoded';
                     var disqus_url = '<?php echo get_permalink(); ?>';
+                    var disqus_developer = 1; //developer mode is on
                     /* * * DON'T EDIT BELOW THIS LINE * * */
                     (function() {
                         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
