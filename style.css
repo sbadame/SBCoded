@@ -1,4 +1,4 @@
-/*
+*
     Theme Name: sbcoded
     Theme URI: http://www.wpdesigner.com
     Description: Wordpress theme for sbcoded
@@ -60,14 +60,15 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
 
 /* Styling the content of the webpage */
 #content{
-    width: 755px;
+    width: 765px;
     float:left;
     color: black;
     background-color: white;
     padding: 10px;
     border: 3px solid #074688;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    border: 2px solid white;
 }
 
 #content a { color: #074688; text-decoration: none; border-bottom: 1px dashed white; }
@@ -143,9 +144,8 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
 
 /* Navigation menu here */
 #navlayer {
-    background-color: #4384D0;
-    margin-bottom: 7px;
-    padding: 0px;
+    padding: 5px;
+    padding-bottom: 15px;
 }
 
 #navlayer .t {background: url(images/contentY1.gif) 0 0 repeat-x; width:100%;}
@@ -182,19 +182,10 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
     margin-right: none;
 }
 
-#content .t {background: url(images/contentY1.gif) 0 0 repeat-x; width:100%;}
-#content .b {background: url(images/contentY0.gif) 0 100% repeat-x;}
-#content .l {background: url(images/contentX0.gif) 0 0 repeat-y;}
-#content .r {background: url(images/contentX1.gif) 100% 0 repeat-y;}
-#content .bl {background: url(images/content00.gif) 0 100% no-repeat; }
-#content .br {background: url(images/content10.gif) 100% 100% no-repeat;}
-#content .tl {background: url(images/content01.gif) 0 0 no-repeat;}
-#content .tr {background: url(images/content11.gif) 100% 0 no-repeat; padding:16px;}
-
 #sidebar{
-    width: 150px;
+    margin-left: 5px;
+    width: 140px;
     color: white;
-    background-color: #4384D0;
     float:right;
 }
 
@@ -211,15 +202,6 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
     margin:0px;
     padding-left:10px;
 }
-
-#sidebar .t {background: url(images/contentY1.gif) 0 0 repeat-x; width:100%;}
-#sidebar .b {background: url(images/contentY0.gif) 0 100% repeat-x;}
-#sidebar .l {background: url(images/contentX0.gif) 0 0 repeat-y;}
-#sidebar .r {background: url(images/contentX1.gif) 100% 0 repeat-y;}
-#sidebar .bl {background: url(images/content00.gif) 0 100% no-repeat; }
-#sidebar .br {background: url(images/content10.gif) 100% 100% no-repeat;}
-#sidebar .tl {background: url(images/content01.gif) 0 0 no-repeat;}
-#sidebar .tr {background: url(images/content11.gif) 100% 0 no-repeat; padding:16px;}
 
 #sidebar { line-height: 150%; }
 
@@ -252,7 +234,7 @@ a:hover { color:#FF7F00; border-bottom: 1px dashed #FF7F00; font-weight:bold; }
 }
 
 .title{
-    font-size:2em;
+    font-size:1.75em;
     font-weight: bold;
     margin-bottom: 7px;
 }
