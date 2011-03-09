@@ -9,12 +9,6 @@
      <link rel="shortcut icon" href="favicon.ico" >
      <link  href="//fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic&subset=latin" rel="stylesheet" type="text/css" >
 
-     <!-- java script (not required for website functionality) -->
-     <script src="http://code.jquery.com/jquery-latest.js"></script>
-     <script type="text/javascript" src="http://dev.jquery.com/view/trunk/plugins/validate/jquery.validate.js"></script>
-     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/jquery.scrollTo-min.js"></script>
-     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/sbcoded.js"></script>
-
      <!-- Trendy Web 2.0 stuff... -->
      <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
      <link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
