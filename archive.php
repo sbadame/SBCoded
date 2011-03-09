@@ -7,7 +7,6 @@
                             <!-- <div class="metadata"> <?php _e('Filed under&#58;'); ?> <?php the_category(', ') ?> <?php _e('by'); ?> <?php the_author(); ?> </div> -->
                             <div class="message"><?php the_excerpt(); ?></div>
                             <div class="meta"><?php edit_post_link('Edit', ' ', ''); ?></div>
-                            <div class="comments"> <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> </div>
                         </div>
                     <?php endwhile; ?>
                     <div class="navlinks"> <?php posts_nav_link(); ?> </div>
